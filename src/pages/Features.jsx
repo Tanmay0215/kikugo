@@ -1,6 +1,9 @@
 import React from 'react'
 import { features } from '../features'
 import FeatureCard from '../components/FeatureCard'
+import FeatureDetails from '../components/FeatureDetails'
+import { motion } from 'framer-motion'
+import { featureDetails } from '../features'
 
 const Features = () => {
   return (
@@ -14,6 +17,11 @@ const Features = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 max-w-6xl">
         {features.map((feature, index) => (
           <FeatureCard key={index} {...feature} />
+        ))}
+      </div>
+      <div>
+        {featureDetails.map((feature) => (
+          <FeatureDetails feature={feature} />
         ))}
       </div>
     </div>

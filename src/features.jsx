@@ -17,3 +17,25 @@ export const features = [
     icon: Video,
   },
 ]
+
+
+export const featureDetails = [
+  {
+    "id": 1,
+    "image": "./JoyoKanji.png",
+    "title": "KANJI",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus voluptatem adipisci ducimus aperiam, consequatur odio deleniti suscipit distinctio, nemo sunt animi?"
+  },
+  {
+    "id": 2,
+    "image": "JoyoKanji.png",
+    "title": "KANJI",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus voluptatem adipisci ducimus aperiam, consequatur odio deleniti suscipit distinctio, nemo sunt animi?"
+  },
+  {
+    "id": 3,
+    "image": "JoyoKanji.png",
+    "title": "KANJI",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus voluptatem adipisci ducimus aperiam, consequatur odio deleniti suscipit distinctio, nemo sunt animi?"
+  },
+]
