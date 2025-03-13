@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar'
 import dashboard from '../assets/dashboard.png'
 import Footer from '../components/Footer'
 import Features from './Features'
-import kanji from '../assets/JoyoKanji.png'
 import { motion } from 'motion/react'
 
 const Home = () => {
@@ -13,7 +12,7 @@ const Home = () => {
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.5 }}
         className="flex flex-col justify-center items-center"
       >
         <div className="max-w-md text-4xl uppercase md:text-5xl md:text-center text-gray-300 font-bold pt-10">
@@ -30,7 +29,7 @@ const Home = () => {
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.5 }}
         className="flex flex-col items-center justify-center py-10"
       >
         <h2 className="text-4xl font-bold text-center mb-5">
@@ -41,17 +40,6 @@ const Home = () => {
         </div>
       </motion.div>
       <Features />
-      <div className="flex items-center justify-center gap-5 rounded-xl py-2 m-10">
-        <img src={kanji} alt="Kanji" className="w-2/5" />
-        <div className="w-1/2">
-          <p className="text-3xl font-bold text-primary">KANJI</p>
-          <p className="text-gray-400 text-sm">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus
-            voluptatem adipisci ducimus aperiam, consequatur odio deleniti
-            suscipit distinctio, nemo sunt animi?
-          </p>
-        </div>
-      </div>
       <Footer />
     </div>
   )
