@@ -12,7 +12,9 @@ const Home = () => {
         className="flex flex-col justify-center items-center"
       >
         <div className="max-w-2xl text-3xl uppercase md:text-5xl md:text-center text-gray-300 font-bold pt-10">
-          Master <span className='text-primary'>Japanese</span> Naturally - No PAYWALLS, No Barriers, <span className='text-primary'>Just Learning</span>
+          Master <span className="text-primary">Japanese</span> Naturally - No
+          PAYWALLS, No Barriers,{' '}
+          <span className="text-primary">Just Learning</span>
         </div>
         <div className="py-5 max-w-lg text-center text-gray-300">
           <h3>
@@ -31,12 +33,12 @@ const Home = () => {
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-col items-center justify-center py-10"
+        className="flex flex-col items-center justify-center pt-5 pb-10"
       >
         <img
           src={dashboard}
           alt="Dashboard"
-          className="max-w-5xl mx-auto rounded-xl py-2 border-2 border-gray-400 shadow-gray-300 shadow-lg"
+          className="max-w-5xl mx-auto rounded-2xl py-2 shadow-2xl shadow-white"
         />
       </motion.div>
     </div>

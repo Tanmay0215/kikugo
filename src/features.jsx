@@ -1,11 +1,3 @@
-import { Book, PencilRuler, Video } from 'lucide-react'
-
-export const features = [
-  'Youtube Immersion',
-  'AI Practice',
-  'JoyoKanji + Flash Cards',
-]
-
 export const featureDetails = [
   {
     id: 1,

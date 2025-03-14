@@ -1,20 +1,26 @@
 import React from 'react'
-import { features } from '../features'
 import FeatureDetails from '../components/FeatureDetails'
 import { motion } from 'framer-motion'
 import { featureDetails } from '../features'
+import { FaYoutube } from 'react-icons/fa'
+import { Bot, Box, BoxIcon } from 'lucide-react'
 
 const Features = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center pt-5">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl py-2">
-        {features.map((feature, index) => (
-          <div key={index}>
-            <motion.div className="border-2 border-primary/60 rounded-md py-2 px-4 text-center">
-              {feature}
-            </motion.div>
-          </div>
-        ))}
+        <div className="flex items-center justify-center gap-2 border-2 border-blue-600/60 rounded-md p-4 shadow-2xl hover:shadow-blue-600">
+          <FaYoutube size={24} />
+          <p>Youtube Immersion</p>
+        </div>
+        <div className="flex items-center justify-center gap-2 border-2 border-violet-600/60 rounded-md p-4 shadow-2xl hover:shadow-violet-600">
+          <Bot size={24} />
+          <p>AI Practice</p>
+        </div>
+        <div className="flex items-center justify-center gap-2 border-2 border-fuchsia-700/60 rounded-md p-4 shadow-2xl hover:shadow-fuchsia-700">
+          <BoxIcon size={24} />
+          <p>JoyoKanji + Flash Cards</p>
+        </div>
       </div>
       <div className="text-center py-8">
         <h1 className="text-4xl font-bold text-primary">FEATURES</h1>
